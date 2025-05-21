@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace War_project.classes
+namespace War_project.ק_קק
 {
-    internal class FirePower
+    internal class Brigade
     {
     }
 }
