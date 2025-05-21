@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace War_project.classes
 {
-    internal class Tanks:Brigade
+    internal class Aman
     {
-        public Tanks(List<Weapon> weapon = null) : base(weapon) 
+        public Aman() 
         {
-            this.AreaType = "urban";
         }
     }
 }

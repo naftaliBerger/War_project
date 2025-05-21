@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace War_project.classes
 {
-    internal class Tanks:Brigade
+    internal class Ships:Brigade
     {
-        public Tanks(List<Weapon> weapon = null) : base(weapon) 
+        public Ships(List<Weapon> weapon = null) : base(weapon)
         {
             this.AreaType = "urban";
         }
