@@ -11,7 +11,7 @@ namespace War_project
         static void Main(string[] args)
         {
 
-            idf t = new idf();
+            
         }
     }
 }
