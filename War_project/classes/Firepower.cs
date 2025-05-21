@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace War_project.classes
+public class FirePower
 {
-    internal class FirePower
+    private List<Iweapon> _weapons { get; set; }
+
+    public FirePower()
     {
+        _weapons = GetFromDB();
+
+    }
+
+    private List<Iweapon> GetFromDB()
+    {
+        return new List<Iweapon>();
     }
 }
