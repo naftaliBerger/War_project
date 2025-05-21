@@ -12,6 +12,9 @@
         this.Location = Location;
         this.Weapon_quantity = Weapon_quantity;
     }
+    public bool adjustment(string str)
+    {
+        return true;
+    }
 
-    
 }
