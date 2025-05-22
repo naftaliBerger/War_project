@@ -8,12 +8,20 @@ namespace War_project.classes
 {
     internal class IDF
     {
-       public FirePower firePower { get; set; }
+        public string ramatcal;
+        public string date;
+        public FirePower firePower { get; set; }
         public Aman aman { get; set; }
-        public IDF()
+        public IDF(string ramatcal , string date)
         {
             firePower = new FirePower();
             aman = new Aman();
+            this.ramatcal = ramatcal;
+            this.date = date;
         }
+
+
+
+        
     }
 }

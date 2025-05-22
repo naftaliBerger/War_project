@@ -27,14 +27,15 @@ public class FirePower
             switch (strings[0])
             {
                 case "tank":
-                   // tanks.Add(new Tank());
+                   tanks.Add(new Tank(strings[1], int.Parse(strings[2] ) , strings[3]));
                     break;
                 case "ship":
-                   // tanks.Add(new Ship());
+                   tanks.Add(new Ship(strings[1], int.Parse(strings[2]), strings[3]));
                     break;
-                case "airplane":
-                    //tanks.Add(new Airplane());
+                case "plane":
+                   tanks.Add(new Plane(strings[1], int.Parse(strings[2]), strings[3]));
                     break;
+                    
 
 
             }
