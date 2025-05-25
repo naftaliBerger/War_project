@@ -1,9 +1,9 @@
 ﻿public class Terrorist
 {
-    string name;
-    int rank;
-    bool situation;
-    string weapon;
+    public string name;
+    public int rank;
+    public bool situation;
+    public string weapon;
 
     public Terrorist(string name, int rank, bool situation , string weapon)
     {

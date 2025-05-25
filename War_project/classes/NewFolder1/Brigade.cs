@@ -24,12 +24,12 @@ public class Brigade
         this.weapon.Add(weapon);
     }
     
-    public bool IsSomAvailable(string report)
+    public bool IsSomAvailable(Report report)
     {
         bool resolt = weapon.Any(x => x.adjustment(report));
         return resolt;
     }
-    public Weapon GetWeaponToAttact(string report)
+    public Weapon GetWeaponToAttact(Report report)
     {
         Weapon chich = weapon.Find(x => x.adjustment(report));
         return chich;
