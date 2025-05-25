@@ -15,7 +15,7 @@ namespace War_project
             idf.StartWar();
             idf.ManagWar.setTerorOrg(new Hamas(new List<Terrorist> { }));
 
-            idf.ManagWar.randomAttac();
+            Menu.menu(idf);
 
         }
     }
