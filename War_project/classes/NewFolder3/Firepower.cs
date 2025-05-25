@@ -12,4 +12,13 @@ public class FirePower
         Brigades = ManageDB_FACTOR.GetWeaponsFromDB();
 
     }
+
+
+    public bool isAbleAttack(Report report)
+    {
+        Brigade BrigadAble = Brigades.Find(x => x.CheckTypeArea(report.Area));
+
+
+        return true;
+    }
 }
