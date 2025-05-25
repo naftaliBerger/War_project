@@ -105,8 +105,10 @@ public class ManagWar
         Console.WriteLine($"added {input[0]}");
     }
 
-    public void addReaport(string name = "")
+    public void addReaport()
     {
+        Console.WriteLine("enter name or ''");
+        string name = Console.ReadLine();
         Random rand = new Random();
         Terrorist t;
         if (name == "")
