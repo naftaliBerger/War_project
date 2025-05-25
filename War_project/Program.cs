@@ -13,7 +13,7 @@ namespace War_project
         {
             IDF idf = IDF.GetIDF("hilh", "hiuhi");
             idf.StartWar();
-            idf.ManagWar.setTerorOrg(new Hamas(new List<Terrorist> { }));
+            idf.ManagWar.setTerorOrg(new Hamas(ManageDB_FACTOR.getTerroriststFromDB()));
 
             Menu.menu(idf);
 

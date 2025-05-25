@@ -67,10 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="db\Terrorists.txt" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="db\Reports.txt" />
+    <Content Include="db\weapon.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -66,4 +66,23 @@ public static class ManageDB_FACTOR
 
         return reports;
     }
+
+    public static List<Terrorist> getTerroriststFromDB()
+    {
+        List<Terrorist> Terrorists = new List<Terrorist>();
+
+        var f = File.ReadAllLines(@"..\..\db\Terrorists.txt");
+
+
+
+
+        foreach (var line in f)
+        {
+            string[] strings = line.Split();
+            Terrorist t = new Terrorist(strings[0], int.Parse(strings[1]), bool.Parse(strings[2]), strings[3]);
+            Terrorists.Add(t);
+        }
+
+        return Terrorists;
+    }
 }
