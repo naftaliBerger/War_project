@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Dynamic;
 using War_project.classes;
 
@@ -25,6 +26,15 @@ public class ManagWar
     public void CreatReporsByNum(int num)
     {
         List<Terrorist> listT = org.GetTeroristsByNun(num);
+    }
+
+    public void randomAttac()
+    {
+        Random rnd = new Random();
+
+        Report report = aman.reports[rnd.Next(0,aman.reports.Count)];
+
+        
     }
 
 
