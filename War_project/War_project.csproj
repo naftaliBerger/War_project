@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\factory\menu.cs" />
     <Compile Include="classes\Weapons\Airplanes.cs" />
     <Compile Include="classes\Weapons\Tank.cs" />
     <Compile Include="classes\factory\ManageDB_FACTOR.cs" />
