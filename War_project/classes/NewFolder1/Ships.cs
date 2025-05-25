@@ -10,7 +10,7 @@ namespace War_project.classes
     {
         public Ships(List<Weapon> weapon = null) : base(weapon)
         {
-            this.AreaType = "urban";
+            this.AreaType = "sea";
         }
     }
 }

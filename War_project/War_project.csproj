@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -43,17 +43,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\plane.cs" />
-    <Compile Include="classes\ship.cs" />
-    <Compile Include="classes\tank.cs" />
+    <Compile Include="classes\NewFolder1\Airplanes.cs" />
+    <Compile Include="classes\NewFolder1\Tank.cs" />
+    <Compile Include="classes\NewFolder2\ManageDB_FACTOR.cs" />
+    <Compile Include="classes\NewFolder3\Aman.cs" />
+    <Compile Include="classes\NewFolder1\Brigade.cs" />
+    <Compile Include="classes\NewFolder3\ManagWar.cs" />
+    <Compile Include="classes\NewFolder3\Firepower.cs" />
+    <Compile Include="classes\NewFolder4\Hamas.cs" />
+    <Compile Include="classes\NewFolder3\IDF.cs" />
+    <Compile Include="classes\NewFolder1\plane.cs" />
+    <Compile Include="classes\NewFolder4\Report.cs" />
+    <Compile Include="classes\NewFolder1\ship.cs" />
+    <Compile Include="classes\NewFolder1\Ships.cs" />
+    <Compile Include="classes\NewFolder1\Tanks.cs" />
+    <Compile Include="classes\NewFolder4\TerorOrg.cs" />
+    <Compile Include="classes\NewFolder4\terrorist.cs" />
     <Compile Include="interfaceses.cs" />
-    <Compile Include="classes\tank.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="classes\weapon.cs" />
+    <Compile Include="classes\NewFolder1\weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="db\Reports.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
