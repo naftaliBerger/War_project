@@ -34,6 +34,18 @@ public class ManagWar
 
         Report report = aman.reports[rnd.Next(0,aman.reports.Count)];
 
+        if (firePower.isAbleAttack(report))
+        {
+            Weapon w = firePower.getWeaponToAttack(report);
+            w.attack(report);
+
+        }
+
+        else
+        {
+            Console.WriteLine("not cen attack try egen ");
+            this.randomAttac();
+        }
         
     }
 

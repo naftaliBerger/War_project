@@ -12,9 +12,10 @@ namespace War_project
         static void Main(string[] args)
         {
             IDF idf = IDF.GetIDF("hilh", "hiuhi");
+            idf.StartWar();
+            idf.ManagWar.setTerorOrg(new Hamas(new List<Terrorist> { }));
 
-            Console.WriteLine(idf.firePower.Brigades[0].weapon[2].name);
-            Console.WriteLine(idf.aman.reports[0].Area);
+            idf.ManagWar.randomAttac();
 
         }
     }
