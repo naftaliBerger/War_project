@@ -52,8 +52,8 @@ public class ManagWar
 
     public void ShowAliveTerorist()
     {
-        List<Terrorist> teror = org.terrorists.FindAll(x => x.situation == true).ToList();
-
+        List<Terrorist> teror = org.terrorists.Where(x => x.situation == true).ToList();
+       
         foreach(Terrorist t in teror)
         {
             Console.WriteLine($"name : {t.name} rank:{t.rank} weapon :{t.weapon}");
@@ -63,7 +63,7 @@ public class ManagWar
     public void ShowDadTerorist()
     {
         List<Terrorist> teror = org.terrorists.FindAll(x => x.situation == false).ToList();
-
+       
         foreach (Terrorist t in teror)
         {
             Console.WriteLine($"name : {t.name} rank:{t.rank} weapon :{t.weapon}");
@@ -131,12 +131,17 @@ public class ManagWar
     {
         Report t = aman.reports.Find(x => x.terrorist.name == name);
 
-        if (firePower.isAbleAttack(t))
+        if (t == null)
+        {
+            Console.WriteLine("no terorist");
+            return;
+        }
+        if (firePower.isAbleAttack(t) )
         {
            Weapon w = firePower.getWeaponToAttack(t);
             w.attack(t);
         }
-        else { Console.WriteLine("no terorist"); }
+        else { Console.WriteLine("no weapon to attack"); }
 
     }
 
